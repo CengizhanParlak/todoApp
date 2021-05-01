@@ -1,0 +1,13 @@
+.unchecked {}
+
+.checked {
+   text-decoration: line-through green 2px;
+}
+
+.todo-item{
+   cursor: pointer;
+}
+
+.delete-button {
+   align-items: flex-end;
+}

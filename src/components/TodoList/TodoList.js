@@ -3,19 +3,18 @@ import TodoItem from "../TodoItem/TodoItem";
 import "./TodoList.css";
 
 function TodoList(props) {
-  return (
-    <div>
+
+   return (
       <ul>
-        {props.todos.map((todo) => {
-          return (
-            <li className="list-group-item">
-              <TodoItem {...todo} key={todo.id} />
-            </li>
-          );
-        })}
+         {props.todos.map((todo) => {
+            return (
+               <li className="list-group-item">
+                  <TodoItem {...todo} key={todo.id} delete={props.delete} />
+               </li>
+            );
+         })}
       </ul>
-    </div>
-  );
+   );
 }
 
 export default TodoList;
